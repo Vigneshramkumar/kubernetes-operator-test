@@ -1,0 +1,24 @@
+# permissions for end users to edit mycrdoperators.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: mycrdoperator-editor-role
+rules:
+- apiGroups:
+  - my-crd.beezlabs.com
+  resources:
+  - mycrdoperators
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - my-crd.beezlabs.com
+  resources:
+  - mycrdoperators/status
+  verbs:
+  - get

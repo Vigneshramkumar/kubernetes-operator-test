@@ -1,0 +1,16 @@
+domain: beezlabs.com
+layout:
+- go.kubebuilder.io/v3
+projectName: k8s-operator
+repo: vigneshramkumar/kubernetes-operator-test
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: beezlabs.com
+  group: my-crd
+  kind: MyCRDOperator
+  path: vigneshramkumar/kubernetes-operator-test/api/v1
+  version: v1
+version: "3"

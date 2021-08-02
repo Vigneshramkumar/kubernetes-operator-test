@@ -1,0 +1,7 @@
+apiVersion: my-crd.beezlabs.com/v1
+kind: MyCRDOperator
+metadata:
+  name: mycrdoperator-sample
+spec:
+  # Add fields here
+  foo: bar
